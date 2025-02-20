@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/svg_browser.svg" />
+    <!-- Изменен путь -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- Schema.org разметка для продукта -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "R36S HANDHELD GAME CONSOLE",
+        "description": "R36S HANDHELD GAME CONSOLE (R36S RETRO CONSOLE) - Потужна ігрова консоль для ретро-ігор. Магазин ігрових консолей та аксесуарів",
+        "brand": {
+          "@type": "Brand",
+          "name": "R36S"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "35.48",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    </script>
+
+    <!-- Метаданные с обоими вариантами названия -->
+    <title>
+      R36S HANDHELD GAME CONSOLE | R36S RETRO CONSOLE - Game Consoles
+    </title>
+    <meta
+      name="description"
+      content="R36S HANDHELD GAME CONSOLE (R36S RETRO CONSOLE) - Потужна ігрова консоль для ретро-ігор. Магазин ігрових консолей та аксесуарів"
+    />
+
+    <!-- Ключевые слова для улучшения SEO -->
+    <meta
+      name="keywords"
+      content="R36S, handheld console, retro console, game console, ретро консоль, ігрова консоль, портативна консоль"
+    />
+
+    <!-- Open Graph теги для соц. сетей -->
+    <meta
+      property="og:title"
+      content="R36S HANDHELD GAME CONSOLE | R36S RETRO CONSOLE"
+    />
+    <meta
+      property="og:description"
+      content="R36S HANDHELD GAME CONSOLE (R36S RETRO CONSOLE) - Потужна ігрова консоль для ретро-ігор. Магазин ігрових консолей та аксесуарів"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Дополнительные мета-теги для SEO -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="R36S Game Consoles" />
+    <link rel="canonical" href="https://ваш-домен.com" />
+    <!-- Замените на ваш домен -->
+  </head>
+  <body>
+    <!-- Основной контейнер -->
+    <div id="app">
+      <header id="header"></header>
+      <main>
+        <section id="hero" class="hero">
+          <div class="hero__background">
+            <div class="hero__overlay"></div>
+          </div>
+
+          <div class="hero__container">
+            <div class="hero__image">
+              <div class="hero__image-wrapper">
+                <div class="hero__image-glow"></div>
+                <picture>
+                  <source
+                    media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+                    srcset="/assets/img/hero/herou1_2x_.png"
+                    type="image/png"
+                  />
+                  <img
+                    src="/assets/img/hero/herou1_1x_.png"
+                    srcset="
+                      /assets/img/hero/herou1_1x_.png 1x,
+                      /assets/img/hero/herou1_2x_.png 2x
+                    "
+                    alt="R36S Gaming Console"
+                    class="hero__console-img"
+                    width="600"
+                    height="400"
+                    loading="eager"
+                  />
+                </picture>
+              </div>
+            </div>
+
+            <div class="hero__content">
+              <h1 class="hero__title">
+                <span class="hero__title-line">R36S HANDHELD </span>
+                <span class="hero__title-line">GAME CONSOLE</span>
+              </h1>
+              <p class="hero__description"></p>
+
+              <div class="hero__pricing desktop-only">
+                <div class="hero__price-wrapper">
+                  <span class="hero__original-price">US $108.06</span>
+                  <span class="hero__current-price">
+                    $35.48
+                    <span style="font-size: 24px">US</span>
+                  </span>
+                </div>
+                <span class="hero__discount-badge">-68%</span>
+              </div>
+
+              <div class="hero__buttons">
+                <button class="hero__button hero__button--primary">
+                  <span class="hero__button-pulse"></span>
+                  <span class="hero__button-text">Shop With Discount</span>
+                  <span class="hero__button-shine"></span>
+                </button>
+                <button class="hero__button hero__button--secondary">
+                  More details
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about"></section>
+        <section id="features"></section>
+        <section id="categories"></section>
+        <section id="products"></section>
+        <section id="articles"></section>
+        <section id="reviews"></section>
+        <section id="contact"></section>
+      </main>
+      <footer id="footer"></footer>
+    </div>
+
+    <!-- Modal container -->
+    <div id="modal-root"></div>
+
+    <!-- Подключение основного JavaScript файла -->
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
