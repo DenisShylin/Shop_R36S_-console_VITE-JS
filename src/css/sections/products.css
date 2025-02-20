@@ -1,0 +1,10 @@
+.products {
+    padding: 80px 0;
+    background-color: var(--color-background);
+}
+
+.products__container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}

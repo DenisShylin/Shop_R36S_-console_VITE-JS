@@ -1,3 +1,25 @@
+const imagePreloader = {
+  init() {
+    // Создаем link preload для критичных изображений
+    const preloadLinks = [
+      { href: "/assets/img/hero/herou1_1x_.png", media: "(max-width: 1x)" },
+      {
+        href: "/assets/img/hero/herou1_2x_.png",
+        media: "(min-resolution: 2x)",
+      },
+    ];
+
+    preloadLinks.forEach(({ href, media }) => {
+      const link = document.createElement("link");
+      link.rel = "preload";
+      link.as = "image";
+      link.href = href;
+      if (media) link.media = media;
+      document.head.appendChild(link);
+    });
+  },
+};
+
 export const initHero = () => {
   // Получаем элементы
   const heroSection = document.getElementById("hero");
@@ -104,3 +126,4 @@ export const initHero = () => {
     observer.disconnect();
   };
 };
+imagePreloader.init();
